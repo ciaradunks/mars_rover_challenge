@@ -5,8 +5,8 @@ from django.contrib.auth.models import User
 
 
 class Plateau(models.Model):
-    x_length = models.IntegerField()
-    y_height = models.IntegerField()
+    x_length = models.PositiveIntegerField()
+    y_height = models.PositiveIntegerField()
 
 
 class Rover(models.Model):
@@ -15,7 +15,22 @@ class Rover(models.Model):
     name = models.CharField(max_length=15)
     # maybe there is a more specific way to reference the user id e.g. User.id?
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    starting_position_x = models.IntegerField()
-    starting_position_y = models.IntegerField()
+    starting_position_x = models.PositiveIntegerField()
+    starting_position_y = models.PositiveIntegerField()
     starting_direction = models.CharField(max_length=1)
     movement_instructions = models.CharField(max_length=100)
+
+
+class RoverInstructions(models.Model, Plateau, Rover):
+    # set the position?
+    def __init__(self):
+        self.plateau = Plateau.x_length, Plateau.y_height
+
+    def current_position(self):
+        return'{} {} {}'.format(Rover.starting_position_x,
+                                Rover.starting_position_y,
+                                Rover.starting_direction
+                                )
+
+
+
