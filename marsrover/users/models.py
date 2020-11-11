@@ -22,15 +22,31 @@ class Rover(models.Model):
 
 
 class RoverInstructions(models.Model, Plateau, Rover):
-    # set the position?
+    AVAILABLE_COMMANDS = {
+        'M': 'move',
+        'L': 'turn_left',
+        'R': 'turn_right',
+    }
+
+    DIRECTIONS = {
+        'N': 1,
+        'E': 2,
+        'S': 3,
+        'W': 4,
+    }
+
     def __init__(self):
         self.plateau = Plateau.x_length, Plateau.y_height
+        self.position.x = Rover.starting_position_x
+        self.position.y = Rover.starting_position_y
+        self.heading = Rover.starting_direction
 
     def current_position(self):
-        return'{} {} {}'.format(Rover.starting_position_x,
-                                Rover.starting_position_y,
-                                Rover.starting_direction
+        return'{} {} {}'.format(self.position.x,
+                                self.position.y,
+                                self.heading
                                 )
 
-
+    def get_heading(self):
+        directions = list(self.DIRECTIONS.keys())
 
