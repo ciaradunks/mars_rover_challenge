@@ -1,0 +1,26 @@
+# show the user id and list the relevant rovers (user homepage)
+# can put rovers in a table > look up
+# iterate through rovers and if id is the one wanted, add to table
+# with a button run to execute the functions
+# run will map to another URL with returned final position
+
+<!--users/templates/users/register.html-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+Hello, {{ user.username}}. Here are your rovers:
+
+<div>
+    {% for elem in rovers %}
+        {% if elem.user_id == user.id %}
+            <p>{{ rovers.elem }}</p>
+        {% endif %}
+    {% endfor %}
+    <p> {{ rovers.0.user_id }} </p>
+    <p> {{ rovers.0 }} </p>
+    <p> {{ user.id }} </p>
+    <p> {{ rovers }} </p>
+</div>
+
+{% endblock %}
