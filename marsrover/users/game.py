@@ -1,7 +1,4 @@
-"""from .models import Plateau, Rover
-
-
-class RoverInstructions(rover_dict):
+"""class RoverInstructions:
     AVAILABLE_COMMANDS = {
         'M': 'move',
         'L': 'turn_left',
@@ -15,13 +12,13 @@ class RoverInstructions(rover_dict):
         'W': 4,
     }
 
-    def __init__(self):
-        self.plateau.x = Plateau.x_length
-        self.plateau.y = Plateau.y_height
-        self.position.x = Rover.starting_position_x
-        self.position.y = Rover.starting_position_y
-        self.direction = Rover.starting_direction
-        self.commands = Rover.movement_instructions
+    def __init__(self, rover):
+        self.plateau.x = 20
+        self.plateau.y = 20
+        self.position.x = rover['starting_position_x']
+        self.position.y = rover['starting_position_y']
+        self.direction = rover['starting_direction']
+        self.commands = rover['movement_instructions']
 
     def current_position(self):
         return'{} {} {}'.format(self.position.x,
@@ -49,7 +46,7 @@ class RoverInstructions(rover_dict):
             return False
         # Assume that the square directly North from (x, y) is (x, y+1).
         if self.DIRECTIONS['N'] == self.direction:
-            self.position.y += 1y
+            self.position.y += 1
         elif self.DIRECTIONS['E'] == self.direction:
             self.position.x += 1
         elif self.DIRECTIONS['S'] == self.direction:

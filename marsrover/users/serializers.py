@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from .models import Rover, Plateau
-    #RoverInstructions
 
 
 # A way of serializing/deserializing the rover instances into json instances
@@ -18,7 +17,3 @@ class PlateauSerializer(serializers.ModelSerializer):
         fields = ['x_length', 'y_height']
 
 
-"""class RoverInstructionsSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = RoverInstructions
-"""

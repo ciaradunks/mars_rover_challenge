@@ -122,5 +122,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # changes the default redirection
-LOGIN_REDIRECT_URL = "/api/v1/rovers"  # new
+LOGIN_REDIRECT_URL = "/rovers"  # new
 LOGOUT_REDIRECT_URL = "/home"  # new

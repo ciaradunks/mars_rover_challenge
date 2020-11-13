@@ -5,8 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marsrover/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marsrover/marsrover/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/marsrover/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marsrover/marsrover/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/marsrover/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marsrover/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marsrover/users/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/users/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marsrover/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marsrover/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/users/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marsrover/users/templates/users/rovers.html" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/users/templates/users/rovers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marsrover/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marsrover/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/marsrover/users/views.py" afterDir="false" />
     </list>
@@ -39,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.views">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="marsroverapp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="marsroverapp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,11 +115,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/marsrover/marsrover" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/marsrover/users" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/marsrover/marsrover/settings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/marsrover/users/test_game.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,18 +173,18 @@
     <list>
       <item itemvalue="Python.marsrover" />
       <item itemvalue="Python.manage" />
-      <item itemvalue="Python.settings" />
       <item itemvalue="Python.wsgi" />
       <item itemvalue="Python.models" />
       <item itemvalue="Python.views" />
+      <item itemvalue="Python.test_game" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.test_game" />
         <item itemvalue="Python.views" />
         <item itemvalue="Python.models" />
-        <item itemvalue="Python.manage" />
         <item itemvalue="Python.wsgi" />
-        <item itemvalue="Python.settings" />
       </list>
     </recent_temporary>
   </component>
@@ -202,37 +206,48 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="88" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605034143118" />
-    <state width="1022" height="147" key="GridCell.Tab.0.bottom" timestamp="1605192245126">
+    <state width="987" height="105" key="GridCell.Tab.0.bottom" timestamp="1605252597984">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1022" height="147" key="GridCell.Tab.0.bottom/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605192245126" />
-    <state width="1022" height="147" key="GridCell.Tab.0.center" timestamp="1605192245126">
+    <state width="987" height="105" key="GridCell.Tab.0.bottom/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605252597984" />
+    <state width="987" height="105" key="GridCell.Tab.0.center" timestamp="1605252597975">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1022" height="147" key="GridCell.Tab.0.center/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605192245126" />
-    <state width="1022" height="147" key="GridCell.Tab.0.left" timestamp="1605192245126">
+    <state width="987" height="105" key="GridCell.Tab.0.center/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605252597975" />
+    <state width="987" height="105" key="GridCell.Tab.0.left" timestamp="1605252597971">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1022" height="147" key="GridCell.Tab.0.left/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605192245126" />
-    <state width="1022" height="147" key="GridCell.Tab.0.right" timestamp="1605192245126">
+    <state width="987" height="105" key="GridCell.Tab.0.left/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605252597971" />
+    <state width="987" height="105" key="GridCell.Tab.0.right" timestamp="1605252597976">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1022" height="147" key="GridCell.Tab.0.right/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605192245126" />
-    <state width="1022" height="346" key="GridCell.Tab.1.bottom" timestamp="1605192247817">
+    <state width="987" height="105" key="GridCell.Tab.0.right/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605252597976" />
+    <state width="983" height="213" key="GridCell.Tab.1.bottom" timestamp="1605208626323">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1022" height="346" key="GridCell.Tab.1.bottom/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605192247817" />
-    <state width="1022" height="346" key="GridCell.Tab.1.center" timestamp="1605192247817">
+    <state width="983" height="213" key="GridCell.Tab.1.bottom/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605208626323" />
+    <state width="983" height="213" key="GridCell.Tab.1.center" timestamp="1605208626323">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1022" height="346" key="GridCell.Tab.1.center/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605192247817" />
-    <state width="1022" height="346" key="GridCell.Tab.1.left" timestamp="1605192247817">
+    <state width="983" height="213" key="GridCell.Tab.1.center/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605208626323" />
+    <state width="983" height="213" key="GridCell.Tab.1.left" timestamp="1605208626323">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1022" height="346" key="GridCell.Tab.1.left/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605192247817" />
-    <state width="1022" height="346" key="GridCell.Tab.1.right" timestamp="1605192247817">
+    <state width="983" height="213" key="GridCell.Tab.1.left/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605208626323" />
+    <state width="983" height="213" key="GridCell.Tab.1.right" timestamp="1605208626323">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1022" height="346" key="GridCell.Tab.1.right/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605192247817" />
+    <state width="983" height="213" key="GridCell.Tab.1.right/1920.0.1280.720/0.0.1920.1080@0.0.1920.1080" timestamp="1605208626323" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/marsrover/users/views.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
